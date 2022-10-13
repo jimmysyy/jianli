@@ -1,0 +1,191 @@
+@import '../style/colors.scss';
+
+.normal {
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    h4 {
+        color: #46484b;
+    }
+
+    @each $color,
+    $hash in $colors {
+
+        &.#{$color} .info-wrapper,
+        &.#{$color} .title {
+            background-color: $hash;
+        }
+
+        &.#{$color} .list-wrapper h3 {
+            color: $hash;
+        }
+    }
+
+    .wrapper {
+        color: white;
+        padding: 1.2rem 1.5rem 0 1.5rem;
+    }
+
+    .title {
+        color: white;
+        border-radius: 5px;
+        padding-left: .5rem;
+        line-height: 2.4rem;
+        margin-bottom: .4rem;
+        position: relative;
+    }
+
+    .info-image {
+        color: #e2e2e2;
+
+        &>span {
+            color: white;
+        }
+    }
+
+    .info-detail-item {
+        a,
+        p {
+            color: white;
+        }
+    }
+
+    .list-item {
+        margin-bottom: .5rem;
+    }
+
+    .pluggable {
+        .title {
+            width: fit-content;
+            padding-right: 4rem;
+
+            &::after {
+                content: "";
+                width: 2.4rem;
+                height: 2.4rem;
+                background-color: white;
+                position: absolute;
+                right: -1rem;
+                transform: rotate(45deg);
+            }
+        }
+    }
+
+    .list-wrapper h3 {
+        padding-bottom: .2rem;
+        border-bottom: 2px solid #CBCBCD;
+    }
+
+    &.horizontal {
+        .wrapper {
+            .info-detail-item .title {
+                line-height: 2rem;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+
+    &.vertical {
+        .info-wrapper {
+            flex: none;
+        }
+
+        .wrapper {
+            padding: 2rem 1.2rem;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .info-image {
+            padding: 0 5rem;
+        }
+
+        .info-detail[class] {
+            margin-top: 0;
+            position: relative;
+            align-items: flex-start;
+        }
+
+        .internship {
+            margin-bottom: .5rem;
+        }
+
+        .else {
+            position: absolute;
+            top: 6rem;
+            right: 0;
+        }
+
+        .info-detail-item {
+            width: 50%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+
+            .title {
+                font-size: 18px;
+                line-height: 1.2rem;
+                margin-bottom: .4rem;
+                background-color: transparent;
+                padding: 0;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            a,
+            p {
+                color: white;
+            }
+        }
+
+        .pluggable {
+            padding: 1rem .2rem;
+            .wrapper {
+                padding-top: .2rem;
+                padding-bottom: .2rem;
+            }
+        }
+    }
+
+    .title {
+        &::before {
+            display: inline-block;
+            margin-right: 1rem;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: inherit;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+        }
+    }
+
+    .introduction .title::before {
+        content: "\f2bc";
+    }
+
+    .contact .title::before {
+        content: "\f003";
+    }
+
+    .else .title::before {
+        content: "\f1fa";
+    }
+    
+    .internship-wrapper .title::before {
+        content: "\f0f7";
+    }
+
+    .skills-wrapper .title::before {
+        content: "\f085";
+    }
+
+    .experiences-wrapper .title::before {
+        content: "\f0f6";
+    }
+}

@@ -1,0 +1,55 @@
+{
+    "personalInfo": {
+        "name": "Vivek",
+        "image": "https://i.loli.net/2021/04/23/HFojX2hykxIOVaU.png",
+        "gender": "保密",
+        "age": "21",
+        "job": "Web前端开发 - 22届",
+        "qualification": "本科",
+        "university": "xxxx大学",
+        "major": "计算机科学与技术",
+        "github": "https://github.com/eddievandeer",
+        "blog": "https://cavalheiro.cn/",
+        "email": "eddievandeer@163.com",
+        "tel": "132****2861"
+    },
+    "internship": [{
+        "title": "实习公司",
+        "startTime": "",
+        "endTime": "",
+        "descriptions": [
+            "实习经历描述"
+        ]
+    }],
+    "skills": [{
+        "type": "前端基础",
+        "skill": [{
+            "title": "",
+            "descriptions": ["熟练掌握 HTML 及 CSS ，并对 CSS3D 和动画有较深入的了解", "熟练掌握 JavaScript，对原型及继承等知识点有较深的理解", "有在项目中使用 TypeScript 及 CSS 预处理工具（less、sass）进行开发的经验", "了解浏览器的相关原理，熟悉浏览器解析渲染页面的过程"]
+        }]
+    }, {
+        "type": "前端工程化",
+        "skill": [{
+            "title": "",
+            "descriptions": ["熟悉 Vue 及其全家桶，了解 vue-router 的实现原理，同时有使用 Vue3 独立开发小型项目的经验", "阅读过部分 Vue2 的源码，了解数据劫持和模板编译等原理，并手写实现过一个简易的 Vue", "熟悉 react 语法，了解 react-hook 、redux ，参与开发和维护过使用 react 技术栈实现的大型项目", "使用过 webpack、vite，对 webpack 优化有一定的了解"]
+        }]
+    }, {
+        "type": "其他",
+        "skill": [{
+            "title": "",
+            "descriptions": ["熟悉Nodejs及其相关类库，能够使用express、eggjs框架搭建后端服务与MySQL和MongoDB数据库交互", "了解 Hybrid App ，并在毕业设计的项目中使用了 React-Native 开发一款即时通讯 App", "熟悉常用的数据结构与算法，且对前端网络安全有一定了解"]
+        }]
+    }],
+    "experiences": [{
+        "type": "个人项目",
+        "details": [{
+            "source": "https://github.com/eddievandeer/eddievandeer.github.io",
+            "title": "酒店后台管理系统 2020.12 - 2021.1",
+            "descriptions": ["大三课程综合设计，担任组长角色，主要负责项目原型的设计、前端技术选型、项目整体架构的搭建、部分的编码实现及接口文档的撰写", "该项目实现前后端分离，前端使用 axios 发送请求，后端使用 Spring Boot 开发，同时使用 Nginx 反向代理解决了跨域问题", "前端技术栈选用了刚出不久的正式版 Vue3 及最新版的 vue-router、vuex，配合 Typescript 及 sass 搭建项目", "出于学习目的，未使用 ui 组件库，参考 ElementUI 源码自行开发了多个可复用的 ui 组件"]
+        }, {
+            "source": "https://github.com/eddievandeer/course-design",
+            "title": "个人博客网站 2020.8 - 至今",
+            "descriptions": ["基于 VuePress 构建的静态个人博客网站，部署在 GitHubPages上 ，并绑定了自己的域名", "使用 vue2，vue-router，webpack，sass 开发一套实现了响应式布局的 VuePress 主题，并将其发布至 npm", "使用 Github Actions 持续集成服务进行自动部署，方便更新文章", "引入了基于 LeanCloud 的无后端评论系统 Valine，来为静态博客网站添加评论功能", "开发了配套的脚手架，一键生成，方便用户略过繁琐的配置过程"]
+        }]
+    }]
+}
